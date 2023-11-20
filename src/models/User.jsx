@@ -1,7 +1,8 @@
 class User {
-    constructor(name, clicksPerSec, coins) {
+    constructor(name, damagePerSec, damagePerClicks, coins) {
         this.name = name;
-        this.clicksPerSec = clicksPerSec;
+        this.damagePerSec = damagePerSec;
+        this.damagePerClicks = damagePerClicks;
         this.coins = coins;
     }
 
@@ -9,14 +10,17 @@ class User {
         return this.name;
     }
 
-    getClicksPerSec() {
-        return this.clicksPerSec;
+    getdamagePerSec() {
+        return this.damagePerSec;
+    }
+
+    getDamagePerClicks() {
+        return this.damagePerClicks;
     }
 
     getCoins() {
         return this.coins;
     }
-
 }
 
 export default User;

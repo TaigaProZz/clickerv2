@@ -1,7 +1,12 @@
+import './main.scss';
+import SideBar from "./side-bar/SideBar";
+import ClickerArea from "./clicker-area/ClickerArea";
+
 function Main() {
     return (
-        <div>
-            main
+        <div className="main-component">
+            <ClickerArea />
+            <SideBar />
         </div>
     )
 }

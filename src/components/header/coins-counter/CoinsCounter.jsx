@@ -2,7 +2,7 @@ function CoinsCounter(props) {
     const coins = props.coins;
 
     return (
-        <div>
+        <div className="flex-d">
             <p>Coins</p>
             {coins}
         </div>

@@ -1,15 +1,17 @@
 import './header.scss';
-import ClicksCounter from './clicks-counter/ClicksCounter';
+import DamagePerSec from './dps-counter/DamagePerSec';
 import CoinsCounter from './coins-counter/CoinsCounter';
+import ClicksDamage from './clicks-damage/ClicksDamage';
 
 function Header(props) {
     const user = props.user;
-    console.log(user.getName());
+    console.log(user.getDamagePerClicks());
 
     return (
         <div className="header">
-            <ClicksCounter clicks={user.getClicksPerSec()} />
-            <CoinsCounter coins={user.getCoins()}/>
+            <DamagePerSec clicks={user.getdamagePerSec()} />
+            <CoinsCounter coins={user.getCoins()} />
+            <ClicksDamage clicksDamage={user.getDamagePerClicks()} />
         </div>
     )
 }
