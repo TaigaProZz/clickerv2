@@ -1,12 +1,12 @@
-function ClicksDamage (props) {
-    const clicksDamage = props.clicksDamage;
+import ItemContainer from "../item-container/ItemContainer";
 
-    return (
-        <div className="flex-d">
-            <p>Damage per clicks</p>
-            {clicksDamage}
-        </div>
-    )
+function ClicksDamage({clicksDamage}) {
+
+  return (
+    <div className="flex-d">
+      <ItemContainer image={'/images/le-curseur.png'} name={`Damage per clicks : ${clicksDamage}`} />
+    </div>
+  )
 }
 
 export default ClicksDamage;

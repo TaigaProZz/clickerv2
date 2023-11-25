@@ -1,7 +1,8 @@
 .side-bar-container {
-    background-color: red;
-    width: 20%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
+  $marginTop: 10px;
+  width: calc(100% - 400px);
+  height: calc(100% - $marginTop);
+  display: flex;
+  justify-content: center;
+  margin-top: $marginTop;
 }

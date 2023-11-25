@@ -1,13 +1,12 @@
-function DamagePerSec (props) {
-    const clicks = props.clicks;
+import ItemContainer from '../item-container/ItemContainer';
 
-    return (
-        <div className="flex-d">
-            <p>Clicks per seconds</p>
-            {clicks}
-        </div>
-    )
+function DamagePerSec({clicks}) {
 
+	return (
+		<div className="flex-d">
+			<ItemContainer image={'/images/damage.png'} name={`Clicks per seconds : ${clicks}`}/>
+		</div>
+	)
 }
 
 export default DamagePerSec;

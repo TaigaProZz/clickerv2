@@ -1,4 +1,35 @@
+$margin: 10px;
+
 .clicker-area-container {
-    width: 80%;
-    background-color: yellow;
+  width: 400px;
+  height: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mob-background {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.clicker-area-click {
+  position: relative;
+  width: calc(100% - $margin);
+  height: 70%;
+  margin: $margin;
+  border-radius: 12px;
+  -webkit-box-shadow: 3px 4px 32px 14px rgba(0,0,0,0.71); 
+  box-shadow: 3px 4px 32px 14px rgba(0,0,0,0.71);
+}
+
+.mob-image {
+  position: absolute;
+  width: 33.33%; 
+  height: auto;
+  top: 30%;
+  left: 30%;
 }

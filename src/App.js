@@ -1,6 +1,6 @@
 import './App.scss';
-import Main from './components/main/main';
-import Header from './components/header/header';
+import Main from './components/main/Main';
+import Header from './components/header/Header';
 import User from './models/User';
 
 function App() {

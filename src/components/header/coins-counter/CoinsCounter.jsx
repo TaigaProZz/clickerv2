@@ -1,12 +1,12 @@
-function CoinsCounter(props) {
-    const coins = props.coins;
+import ItemContainer from "../item-container/ItemContainer";
 
-    return (
-        <div className="flex-d">
-            <p>Coins</p>
-            {coins}
-        </div>
-    )
+function CoinsCounter({coins}) {
+
+	return (
+		<div className="flex-d">
+			<ItemContainer image={'/images/coins.png'} name={`Coins : ${coins}`}/>
+		</div>
+	)
 }
 
 export default CoinsCounter;
