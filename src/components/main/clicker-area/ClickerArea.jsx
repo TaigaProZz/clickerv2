@@ -11,8 +11,9 @@ function ClickerArea() {
     <div className='clicker-area-container'>
       <Header mob={mob} />
       <div className='clicker-area-click'>
-        <img src='/images/clickerArea.jpg' className='mob-background'/>
-        <img src='/images/mobs/psykokwak.png' className='mob-image' />
+        <div className='mob-background'>
+          <img src='/images/mobs/psykokwak.png' className='mob-image' />
+        </div>
       </div>
     </div>
   )
